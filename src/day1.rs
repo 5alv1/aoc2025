@@ -127,7 +127,7 @@ mod tests {
 		d.rotations = input;
 		
 		d.part1(&mut o);
-		assert_eq!(o.result.parse::<u16>().unwrap(), 3);
+		assert_eq!(o.parse::<u16>().unwrap(), 3);
 	}
 	
 	#[test]
@@ -151,6 +151,6 @@ mod tests {
 		d.rotations = input;
 		
 		d.part2(&mut o);
-		assert_eq!(o.result.parse::<u16>().unwrap(), 11)
+		assert_eq!(o.parse::<u16>().unwrap(), 11)
 	}
 }
